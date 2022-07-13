@@ -1,0 +1,3362 @@
+
+$0
+ name:GLOBAL
+ comm: struttura generica di contenimento 
+.
+ $1
+
+ {
+
+$
+*0
+name:OGGETTO
+ def:"oggetto generico"
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:ORDINE
+ def:quantificazione della posizione  
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:QUANTITA
+ def:undefined
+ comm:undefined
+.
+ *1
+
+$
+*0
+name:ANGOLO
+ def:undefined
+ comm:undefined
+.
+ *1
+
+$
+*0
+name:ANGOLO_A
+ def:undefined
+ comm:undefined
+.
+ *1
+
+$
+*0
+name:O
+ def:undefined
+ comm:undefined
+.
+ *1
+
+$
+*0
+name:ESTENSIONE_N
+ def:undefined
+ comm:undefined
+.
+ *1
+
+$
+*0
+name:NUMERO
+ def:qualsiasi OGGETTO indicante una QUANTITA
+ comm:undefined
+.
+ (TEORIA_DEI_NUMERI)
+ *1
+
+$
+*0
+name:COLLEZIONE
+ def:oggetto "composto" da altri OGGETTO
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:N_PLA
+ def:COLLEZIONE in ORDINE di n OGGETTO
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:COPPIA
+ def:COLLEZIONE di due oggetti ordinati
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:CLASSE
+ def:generica COLLEZIONE di oggetti (univocamente identificabili)
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:FAMIGLIA
+ def:COLLEZIONE di OGGETTO (di qualsiasi genere)
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:INSIEME
+ def:COLLEZIONE che non puo contenere due volte lo stesso oggetto, e non e' ordinata
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:INTERSEZIONE
+ def:di due INSIEME e' un insieme che contiene gli oggetti che appartengono sia al primo che al secondo
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:UNIONE
+ def:di due INSIEME e' un insieme che contiene sia gli oggetti del primo che quelli del secondo
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:PRODOTTO_CARTESIANO
+ def:INSIEME delle N_PLA componibili ordinatamente da degli insiemi
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:SOTTOINSIEME
+ def:INSIEME i cui OGGETTO fanno parte di un altro insieme
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:PARTI
+ def:INSIEME di SOTTOINSIEME di un INSIEME la cui unione da tutto l'insieme
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:INSIEME_DELLE_PARTI
+ def:INSIEME di tutti i SOTTOINSIEME di un INSIEME
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:RELAZIONE
+ def:SOTTOINSIEME del PRODOTTO_CARTESIANO
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:COMPLETAMENTO
+ def:di un SOTTOINSIEME rispetto ad un INSIEME, e' un insieme che contiene tutti gli oggetti dell'insieme che non sono contenuti in quel sottoinsieme (dicasi anche complemento relativo)
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:DISGIUNTI
+ def:dicasi tali degli INSIEME la cui INTERSEZIONE risulta vuota
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:PARTIZIONE
+ def:INSIEME di SOTTOINSIEME DISGIUNTI di un di un insieme, la cui UNIONE da tutto l'insieme
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:ANTISIMMETRICA
+ def:proprieta' di una RELAZIONE di essere falsa cambiando l'ordine dei suoi oggetti
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:TRANSITIVA
+ def:proprieta' di una RELAZIONE tra due coppie di OGGETTO di implicare la terza combinazione dei tre oggetti
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:SIMMETRICA
+ def:proprieta' di una RELAZIONE di implicare se stessa con gli OGGETTO scambiati di posto
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:RIFLESSIVA
+ def:proprieta' di una RELAZIONE di un OGGETTO con se stesso
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:FUNZIONE
+ def:RELAZIONE tra due INSIEME che associa ad un elemento del primo uno solo del secondo
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:CHIUSURA
+ def:proprieta' di una FUNZIONE su un INSIEME di associare ad oggetti contenuti nell'insieme stesso
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:RELAZIONE_DORDINE
+ def:RELAZIONE che sia RIFLESSIVA TRANSITIVA  e ANTISIMMETRICA
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:RELAZIONE_DI_EQUIVALENZA
+ def:RELAZIONE che sia RIFLESSIVA SIMMETRICA e TRANSITIVA
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:SIMMETRIA
+ def:proprieta' di una FUNZIONE di essere uguale pur scambiando l'ORDINE degli operatori
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:OPERAZIONE
+ def:una FUNZIONE su un INSIEME che associa ad ogni N_PLA dell'INSIEME un OGGETTO dell'insieme stesso
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:ARIETA
+ def:"numero" di argomenti di una FUNZIONE
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:CODOMINIO
+ def:INSIEME "di arrivo" di una FUNZIONE
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:DOMINIO
+ def:INSIEME "di partenza" di una FUNZIONE
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:LINEARE
+ def:proprieta' di una OPERAZIONE su un altra operazione, di avere l'immagine di un moltiplicato uguale al moltiplicato dell'immagine ( f(a*x)=a*f(x) )
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:TOPOLOGIA_T
+ def:sia un INSIEME non vuoto (supporto) e una FAMIGLIA di insiemi su quello, detti aperti, che 1 contiene l'insieme vuoto e il supporto steso; 2 l'UNIONE di una collezione di aperti e' un aperto; 3 un INTERSEZIONE finita di aperti e' un aperto (CHIUSURA rispetto a intersezione finita ed unione)
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:SIGMA_ALGEBRA
+ def:dato un INSIEME si definisce sgmalg una FAMIGLIA di SOTTOINSIEME di questo, tale che 1 l'insieme stesso appartiene alla famiglia 2 il COMPLETAMENTO di ogni sottoinsieme appartiene alla famiglia 3 la famiglia e' dotata di CHIUSURA rispetto all'UNIONE
+ comm:undefined
+.
+ (TEORIA_DELLA_MISURA)
+ *1
+
+$
+*0
+name:STRUTTURA_ALGEBRICA
+ def:INSIEME definito sostegno munito di una o piu' OPERAZIONE
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:INSIEME_ORDINATO
+ def:INSIEME tra i quali OGGETTO sussista una RELAZIONE_DORDINE
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:CLASSE_DI_EQUIVALENZA
+ def:SOTTOINSIEME di un INSIEME, contenente gli OGGETTO tra i quali sussista una qualche RELAZIONE_DI_EQUIVALENZA con un oggetto qualsiasi dell'insieme
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:OPERAZIONE_UNARIA
+ def:OPERAZIONE con ARIETA uno
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:OPERAZIONE_BINARIA
+ def:OPERAZIONE con ARIETA due
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:OPERAZIONE_TERNARIA
+ def:OPERAZIONE con ARIETA tre
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:IMMAGINE
+ def:INSIEME degli elementi del CODOMINIO a cui sono associati OGGETTO di una FUNZIONE
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:FUNZIONE_INIETTIVA
+ def:una FUNZIONE che associa ad ogni elemento del DOMINIO elementi distinti nel CODOMINIO
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:DISUGUAGLIANZA_TRIANGOLARE
+ def:proprieta' di una FUNZIONE di ARIETA due, di essere ORDINE(ordinatamente) minore alla somma dell'immagine di due operatori con un altro
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:SPAZIO_TOPOLOGICO
+ def:COPPIA dell'INSIEME di supporto e una sua TOPOLOGIA_T
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:APERTO
+ def:INSIEME della FAMIGLIA di una TOPOLOGIA_T
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:OPERATORE
+ def:FUNZIONE da una STRUTTURA_ALGEBRICA a se stessa (gen)
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:MINORANTE
+ def:OGGETTO qualsiasi di un INSIEME_ORDINATO per il quale la RELAZIONE_DORDINE con tutti gli oggetti di un SOTTOINSIEME risulta falsa (x<=tuttoinsieme: x magg insieme) 
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:MAGGIORANTE
+ def:OGGETTO qualsiasi di un INSIEME_ORDINATO per il quale la RELAZIONE_DORDINE con tutti gli oggetti di un SOTTOINSIEME risulta vera (x>=tuttoinsieme: x magg insieme) 
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:ELEMENTO_NEUTRO
+ def:OGGETTO di un INSIEME e una OPERAZIONE_BINARIA che se posto a sx o dx tra gli operandi restituisce l'altro operando
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:SUCCESSIVO
+ def:OPERAZIONE_UNARIA che stabilisce una RELAZIONE_DORDINE
+ comm:undefined
+.
+ (TEORIA_DEI_NUMERI)
+ *1
+
+$
+*0
+name:INTERVALLO
+ def:SOTTOINSIEME di un INSIEME_ORDINATO che comprenda tutti gli oggetti compresi tra due estremi
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:INSIEME_QUOZIENTE
+ def:INSIEME delle CLASSE_DI_EQUIVALENZA su un certo insieme rispetto a una qualche RELAZIONE_DI_EQUIVALENZA
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:FUNZIONE_SURIETTIVA
+ def:una FUNZIONE il cui l' IMMAGINE corrisponde a tutto il CODOMINIO
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:COMPOSIZIONE
+ def:applicazione di una FUNZIONE all'IMMAGINE di un'altra funzione
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:OMOMORFISMO
+ def:FUNZIONE tra due STRUTTURA_ALGEBRICA dello stesso "tipo" che ne conserva l'OPERAZIONE
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:ELEMENTO_ASSORBENTE
+ def:OGGETTO di una OPERAZIONE_BINARIA tale che il risultato sia sempre l'oggetto stesso
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:MAGMA
+ def:STRUTTURA_ALGEBRICA con OPERAZIONE_BINARIA che soddisfa l'assioma di CHIUSURA
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:COMMUTATIVO
+ def:proprieta' di una OPERAZIONE_BINARIA su un INSIEME di associare lo stesso elemento anche scambiando l'ordine degli operandi
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:ASSOCIATIVA
+ def:proprieta' di una OPERAZIONE_BINARIA in cui operando lo stesso elemento sull'oggetto sinistro o destro, si ottiene lo stesso risultato finale
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:METRICA
+ def:FUNZIONE su un INSIEME definita strettamente positiva, che gode di SIMMETRIA  e DISUGUAGLIANZA_TRIANGOLARE
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:SPAZIO_MISURABILE
+ def:STRUTTURA_ALGEBRICA costituita da un INSIEME (non nullo) e una sua SIGMA_ALGEBRA
+ comm:undefined
+.
+ (TEORIA_DELLA_MISURA)
+ *1
+
+$
+*0
+name:CONTROIMMAGINE
+ def:SOTTOINSIEME del DOMINIO identificato dai certi OGGETTO che hanno come IMMAGINE un SOTTOINSIEME scelto del CODOMINIO
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:NUMERABILMENTE_ADDITIVA
+ def:FUNZIONE su una SIGMA_ALGEBRA tale per la quale l'IMMAGINE dell'UNIONE e' uguale alla somma delle immagini sse i due insiemi sono DISGIUNTI
+ comm:undefined
+.
+ (TEORIA_DELLA_MISURA)
+ *1
+
+$
+*0
+name:PUNTO_FISSO
+ def:OGGETTO di una OPERAZIONE la cui IMMAGINE e' se stesso
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:TOPOLOGIA_PIU_DEBOLE
+ def:1 piu debole di 2: ogni APERTO della TOPOLOGIA_T 1 risulta anche un aperto di 2
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:RICOPRIMENTO
+ def:dato un INSIEME in uno SPAZIO_TOPOLOGICO, si dice suo ricoprimento una collezione di insiemi la cui unione include quel dato insieme
+ comm: puo' essere chiuso o aperto che far si voglia
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:INTORNO
+ def:un INSIEME che contiene un APERTO contenente il punto
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:SPAZIO_TOPOLOGICO_UNO
+ def:SPAZIO_TOPOLOGICO in cui dati due punti distinti qualsiasi e' sempre possibile individuare due APERTO che contengono uno e non l'altro
+ comm: tra kolmogorov e hausdorff
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:BASE_TOPOLOGICA
+ def:una FAMIGLIA di APERTO dalla cui unione e' possibile ricavare ogni possibile aperto di uno SPAZIO_TOPOLOGICO
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:FUNZIONE_CONTINUA
+ def:data una FUNZIONE tra due SPAZIO_TOPOLOGICO si dice continua se ad ogni APERTO del secondo contenente l'IMMAGINE di un punto, esiste un aperto del primo contenente questo punto 
+ comm:undefined
+.
+ (TOPOLOGIA)
+ (ANALISI)
+ *1
+
+$
+*0
+name:INSIEME_MISURABILE
+ def:uno degli insiemi della SIGMA_ALGEBRA su uno SPAZIO_MISURABILE 
+ comm:undefined
+.
+ (TEORIA_DELLA_MISURA)
+ *1
+
+$
+*0
+name:NUMERI_NATURALI
+ def:STRUTTURA_ALGEBRICA dell'insieme di tutti i NUMERO e l'operazione SUCCESSIVO
+ comm:undefined
+.
+ (BASE)
+ (TEORIA_DEI_NUMERI)
+ *1
+
+$
+*0
+name:SERIE
+ def: COMPOSIZIONE infinita di OGGETTO rispetto a una FUNZIONE
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:FUNZIONE_BIUNIVOCA
+ def:una FUNZIONE che e' sia FUNZIONE_INIETTIVA che FUNZIONE_SURIETTIVA
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:FUNZIONE_INVERSA
+ def:una FUNZIONE che COMPOSIZIONE (composta) ad un altra restituisce l'elemento iniziale
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:DISTRIBUTIVA
+ def:proprieta' di una OPERAZIONE_BINARIA rispetto ad un'altra, per cui la COMPOSIZIONE di questa sull'altra, e' uguale a composizione dell'altra su questa
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:SEMIGRUPPO
+ def:MAGMA la cui operazione e' ASSOCIATIVA
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:SPAZIO_METRICO
+ def:COPPIA di un INSIEME e la sua METRICA
+ comm: nb se uno spazio e' metrico e' anche topologico di hausdorff
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:MISURA
+ def:una FUNZIONE definita su una SIGMA_ALGEBRA, che sia positiva (e almeno in un caso minore dell'infinito) che sia NUMERABILMENTE_ADDITIVA 
+ comm:undefined
+.
+ (TEORIA_DELLA_MISURA)
+ *1
+
+$
+*0
+name:ESTREMO_SUPERIORE
+ def:MINORANTE dei MAGGIORANTE di un INSIEME_ORDINATO
+ comm: puo' appartenere o no all'insieme; se gli appartiene e' massimo
+.
+ (BASE)
+ *1
+
+$
+*0
+name:ESTREMO_INFERIORE
+ def:MAGGIORANTE dei MINORANTE di un INSIEME_ORDINATO
+ comm: puo' appartenere o no all'insieme; se gli appartiene e' minimo
+.
+ (BASE)
+ *1
+
+$
+*0
+name:PUNTO
+ def:OGGETTO di uno SPAZIO_TOPOLOGICO
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:TOPOLOGIA_GENERATA
+ def:dato uno SPAZIO_TOPOLOGICO e una FAMIGLIA di suoi SOTTOINSIEME, diciamo top gen l'INTERSEZIONE di tutte le TOPOLOGIA_T contenente quella famiglia
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:TOPOLOGIA_PIU_FORTE
+ def:2 piu forte di 1 se ogni APERTO della TOPOLOGIA_T 1 risulta anche un aperto di 2
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:SFERA_DI_INTORNO
+ def:insieme dei punti di uno SPAZIO_METRICO la cui distanza da un punto sia minore (o minoreuguale chessia aperto o chiuso) di un valore arbitrario
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:TEOREMA_DELLE_TOPOLOGIE_INTERSECATE
+ def:dato uno SPAZIO_TOPOLOGICO l'INTERSEZIONE di un insieme qualsiasi delle sue TOPOLOGIA_T e' ancora uno spazio topologico e ciascuna intersezione risulta TOPOLOGIA_PIU_DEBOLE rispetto alle topologie iniziali
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:SPAZIO_DI_MISURA
+ def:STRUTTURA_ALGEBRICA costituita da uno SPAZIO_MISURABILE e la sua MISURA
+ comm:undefined
+.
+ (TEORIA_DELLA_MISURA)
+ *1
+
+$
+*0
+name:SOTTORICOPRIMENTO
+ def:SOTTOINSIEME della collezione che costituisce un RICOPRIMENTO
+ comm: nb e' un insieme di insiemi e non di punti
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:BASE_DI_INTORNO
+ def:una FAMIGLIA di INTORNO di un punto, tale per il quale qualsiasi intorno del punto contiene un intorno della famiglia  
+ comm: serve a poter definire continuità ed anche compattezza; in uno spazio metrico è sempre individuabile una base di intorni di un punto
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:CAMMINO
+ def:FUNZIONE_CONTINUA su un INTERVALLO
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:FUNZIONE_MISURABILE
+ def:dato uno SPAZIO_MISURABILE ed una FUNZIONE che va da questo ad uno SPAZIO_TOPOLOGICO, dicasi misurabile una funzione nel caso in cui la CONTROIMMAGINE di ogni sottoinsieme nel codominio e' un INSIEME_MISURABILE dello spazio iniziale
+ comm:undefined
+.
+ (TEORIA_DELLA_MISURA)
+ *1
+
+$
+*0
+name:PRECEDENTE
+ def:FUNZIONE_INVERSA dell'operazione SUCCESSIVO
+ comm:undefined
+.
+ (TEORIA_DEI_NUMERI)
+ *1
+
+$
+*0
+name:SERIE_RIDOTTA
+ def: COMPOSIZIONE finita ricavata da un indice di una SERIE
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:FUNZIONE_INVERTIBILE
+ def:una FUNZIONE per il quale possa esistere una FUNZIONE_INVERSA
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:OPERAZIONE_INVERSA
+ def:OPERAZIONE che sia una FUNZIONE_INVERSA di una qualche operazione
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:NUMERABILE
+ def:un INSIEME per il quale sia possibile stabilire una FUNZIONE_BIUNIVOCA tra questo e l'insieme dei NUMERI_NATURALI
+ comm:undefined
+.
+ (BASE)
+ (TEORIA_DEI_NUMERI)
+ *1
+
+$
+*0
+name:SOMMA_ARITMETICA
+ def:OPERAZIONE_BINARIA sui NUMERI_NATURALI che e' COMPOSIZIONE arbitraria dell'oprazione SUCCESSIVO
+ comm:undefined
+.
+ (TEORIA_DEI_NUMERI)
+ *1
+
+$
+*0
+name:ANELLOIDE
+ def:INSIEME con due OPERAZIONE_BINARIA di cui una gode di proprieta' DISTRIBUTIVA sull'altra
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:MONOIDE
+ def:SEMIGRUPPO con ELEMENTO_NEUTRO
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:SEMIGRUPPO_ABELIANO
+ def:SEMIGRUPPO COMMUTATIVO
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:ISOMORFISMO
+ def:FUNZIONE_BIUNIVOCA tra due STRUTTURA_ALGEBRICA tale che questa e la sua FUNZIONE_INVERSA risultino OMOMORFISMO
+ comm: molto importante e sintesi DIM(DOM)=RANGO(IM)+DIM(KER)
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:FUNZIONE_UNIFORMEMENTE_CONTINUA
+ def:data una FUNZIONE tra due SPAZIO_METRICO si dice un.cont. se ad ogni distanza a cui corrispondono due qualsiasi punti dell'IMMAGINE e', le loro controimmagini hanno una distanza "minore di un tot"
+ comm:e' praticamente la formulazione in intorni metrici della normale continuita'
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:OMEOMORFISMO
+ def:una FUNZIONE_BIUNIVOCA tra due SPAZIO_TOPOLOGICO tale che sia questa che la sua FUNZIONE_INVERSA siano FUNZIONE_CONTINUA
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:ISOMETRIA
+ def:FUNZIONE tra due SPAZIO_METRICO che lascia invariate le distanze
+ comm: 
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:PUNTO_DI_ADERENZA
+ def:un PUNTO in cui per ogni APERTO che lo contiene si ha che ci sono punti di quell'aperto che appartengono all'INSIEME a cui aderisce
+ comm: ha una definizione piu' ampia dell'accumulazione poiche' include anche il punto di partenza
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:SPAZIO_DI_HAUSDORFF
+ def:SPAZIO_TOPOLOGICO in cui dati due PUNTO e' sempre possibile individuare due INTORNO disgiunti
+ comm:anche detto spazio topologico t2; se è definita una metrica è sempre inducibile una topologia kolmogorov
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:PUNTO_INTERNO
+ def:un PUNTO di un INSIEME per il quale esiste un APERTO tutto contenuto nell'insieme
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:PUNTO_ESTERNO
+ def:PUNTO di un INSIEME per il quale esiste un APERTO che contiene il punto ma e' disgiunto dall'insieme
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:SPAZIO_DI_KOLMOGOROV
+ def:SPAZIO_TOPOLOGICO in cui dati due PUNTO distinti, e' possibile trovare almeno un APERTO che contenga uno e non l'altro
+ comm:anche detto spazio topologico t0
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:PUNTO_DI_ACCUMULAZIONE
+ def:un PUNTO in cui per ogni APERTO che lo contiene si ha che ci sono punti di quell'aperto escluso quel punto che appartengono all'INSIEME a cui aderisce
+ comm: i punti di accumulazione a differenza di quelli di aderenza devono sempre avere vicini altri punti dell'insieme; infatti la differenza della def di p.ad. e' che si esclude il punto di partenza
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:PUNTO_ALLINFINITO
+ def:PUNTO sul DOMINIO di una FUNZIONE la cui distanza dallo zero e' infinita
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:INSIEME_COMPATTO
+ def:un SOTTOINSIEME di uno SPAZIO_TOPOLOGICO, tale che per qualsiasi suo RICOPRIMENTO aperto sia possibile estrarre un SOTTORICOPRIMENTO finito
+ comm: 
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:PARAMETRIZZAZIONE
+ def:FUNZIONE che descrive un CAMMINO
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:SOSTEGNO_A
+ def:INTERVALLO su cui e' definito un CAMMINO
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:INSIEME_LIMITATO
+ def:se esiste una SFERA_DI_INTORNO che contiene tutto l'insieme ed ha raggio finito
+ comm:undefined
+.
+ (TOPOLOGIA)
+ (BASE)
+ *1
+
+$
+*0
+name:NUMERI_INTERI
+ def:STRUTTURA_ALGEBRICA dotata di CHIUSURA dell'insieme di tutti i NUMERI_NATURALI e le operazioni SUCCESSIVO e PRECEDENTE
+ comm:undefined
+.
+ (BASE)
+ (TEORIA_DEI_NUMERI)
+ *1
+
+$
+*0
+name:INVERSO
+ def:OGGETTO di un INSIEME (dotato di OPERAZIONE_BINARIA e della sua OPERAZIONE_INVERSA) sia un oggetto (specifico e diverso(?) per ogni oggetto) che restituisce l'ELEMENTO_NEUTRO 
+ comm:undefined
+.
+ (BASE)
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:SUCCESSIONE
+ def: INSIEME di una quantita' infinitamente NUMERABILE di OGGETTO(i) in ORDINE
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:SOTTRAZIONE_ARITMETICA
+ def:OPERAZIONE_BINARIA sui NUMERI_NATURALI che e' COMPOSIZIONE arbitraria dell'oprazione PRECEDENTE
+ comm:undefined
+.
+ (TEORIA_DEI_NUMERI)
+ *1
+
+$
+*0
+name:MOLTIPLICAZIONE_ARITMETICA
+ def:OPERAZIONE_BINARIA che e' COMPOSIZIONE arbitraria dell'oprazione SOMMA_ARITMETICA
+ comm:undefined
+.
+ (TEORIA_DEI_NUMERI)
+ *1
+
+$
+*0
+name:QUASIGRUPPO
+ def:MAGMA dotato di una OPERAZIONE_INVERSA
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:MONOIDE_ABELIANO
+ def:MONOIDE COMMUTATIVO
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:SPAZI_OMEOMORFI
+ def:due SPAZIO_TOPOLOGICO tra cui esiste un OMEOMORFISMO
+ comm: in cui sostanzialmente ad ogni aperto di uno si può far corrispondere tramite una "deformazione" un aperto dell'altro
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:FUNZIONE_INTEGRABILE
+ def:MISURA dell'IMMAGINE di una FUNZIONE_MISURABILE in rapporto alla misura della sua CONTROIMMAGINE (definizione non rigorosa e fuffabla)
+ comm:undefined
+.
+ (TEORIA_DELLA_MISURA)
+ *1
+
+$
+*0
+name:CHIUSURA_I
+ def:INSIEME dei PUNTO_DI_ADERENZA di un insieme
+ comm: e' l'insieme piu' piccolo dato dall'intersezione di tutti i chiusi che contengono un insieme; e' dato dall'unione del derivato di un insieme piu' l'insieme stesso
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:CONNESSO_PER_ARCHI
+ def:INSIEME per cui due qualsiasi PUNTO possono essere estremita' di un CAMMINO tutto contenuto nell'insieme
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:INTERNO
+ def: l'insieme dei PUNTO_INTERNO di un INSIEME
+ comm: e' l'insieme piu' grande dato dall'unione di tutti gli aperti di un insieme
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:ESTERNO
+ def:INSIEME dei PUNTO_ESTERNO di un insieme
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:PUNTO_DI_FRONTIERA
+ def:PUNTO che non e' ne PUNTO_INTERNO ne PUNTO_ESTERNO di un INSIEME
+ comm: ovverosia quelli "sul bordo"
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:DERIVATO
+ def:INSIEME dei PUNTO_DI_ACCUMULAZIONE di un insieme
+ comm: undef
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:INSIEME_DISCRETO
+ def:INSIEME che non ha PUNTO_DI_ACCUMULAZIONE
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:PUNTO_ISOLATO
+ def: PUNTO di un INSIEME che non e' un PUNTO_DI_ACCUMULAZIONE
+ comm: nb e' tuttavia un punto di aderenza poiche' appartiene all'insieme
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:POTENZA_ARITMETICA
+ def:OPERAZIONE_BINARIA che e' COMPOSIZIONE arbitraria dell'operazione MOLTIPLICAZIONE_ARITMETICA
+ comm:undefined
+.
+ (TEORIA_DEI_NUMERI)
+ *1
+
+$
+*0
+name:INSIEME_CHIUSO
+ def:INSIEME che coincide con la sua CHIUSURA_I
+ comm: ovverosia contiene tutti i suoi punti di aderenza
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:SPAZIO_TOPOLOGICO_COMPATTO
+ def:SPAZIO_TOPOLOGICO il cui supporto risulta un INSIEME_COMPATTO
+ comm: 
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:CAMMINO_CHIUSO
+ def:CAMMINO la cui PARAMETRIZZAZIONE ha IMMAGINE uguale agli estremi dell'INTERVALLO su cui e' definito
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:CAMMINO_SEMPLICE
+ def:se la sua PARAMETRIZZAZIONE e' FUNZIONE_CONTINUA e FUNZIONE_BIUNIVOCA sul suo SOSTEGNO_A
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:CAMMINO_EQUIVALENTE
+ def:dicasi equivalenti due CAMMINO per cui puo' esistere una FUNZIONE_CONTINUA che sia una FUNZIONE_CONTINUA e FUNZIONE_SURIETTIVA che trasforma la prima PARAMETRIZZAZIONE nella seconda
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:FUNZIONE_LIMITATA
+ def:FUNZIONE la cui IMMAGINE risulta essere un INSIEME_LIMITATO
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:SOMMA_DI_RIEMANN
+ def:sommatoria(SOMMA_ARITMETICA) della MISURA di un INTERVALLO sul DOMINIO moltiplicato(MOLTIPLICAZIONE_ARITMETICA) un'IMMAGINE scelta tra quelle dei punti interni all'intervallo
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:INTEGRALE
+ def:valore massimo di una MISURA per le possibili scelte di INTERVALLO di una FUNZIONE_INTEGRABILE 
+ comm:undefined
+.
+ (TEORIA_DELLA_MISURA)
+ *1
+
+$
+*0
+name:SOTTOSUCCESSIONE
+ def: SUCCESSIONE che e' un SOTTOINSIEME di un'altra successione
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:DIVISIONE_ARITMETICA
+ def:OPERAZIONE_BINARIA che e' FUNZIONE_INVERSA dell'operazione MOLTIPLICAZIONE_ARITMETICA
+ comm:undefined
+.
+ (TEORIA_DEI_NUMERI)
+ *1
+
+$
+*0
+name:LOOP
+ def:QUASIGRUPPO con ELEMENTO_NEUTRO
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:SEMIANELLO
+ def:e' un ANELLOIDE dato dall'unione sullo stesso insieme di un MONOIDE_ABELIANO ed un SEMIGRUPPO; inoltre, l'elemento neutro dell'operazione che induce il monoide, e' un ELEMENTO_ASSORBENTE per l'altra operazione
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:CONVERGENZA
+ def:proprieta' di una SUCCESSIONE in un punto (definita su uno SPAZIO_TOPOLOGICO) in cui per ogni INTORNO di quel punto esiste un indice oltre il quale tutti i successivi della successione appartengono a quell'intorno
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:SUCCESSIONE_DI_CAUCHY
+ def:una SUCCESSIONE su uno SPAZIO_METRICO in cui ad ogni valore positivo, esiste un indice oltre il quale la distanza tra due elementi qualsiasi della successione e' minore di quel valore 
+ comm: ovverosia man mano le distanze tra i punti della successione si riducono; ogni successione convergente e' senz'altro una succ. di cauchy, ma non è detto viceversa e non e' detto che converga a un punto appartenente allo spazio (ad esempio per numeri trascendentali in Q)
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:DENSO_I
+ def:si dice denso un INSIEME rispetto ad un altro, se e' contenuto in esso ma esso e' contenuto nella sua CHIUSURA_I
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:INSIEME_APERTO
+ def:INSIEME che coincide con il suo INTERNO
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:FRONTIERA
+ def:INSIEME dei PUNTO_DI_FRONTIERA di un insieme
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:SUCCESSIONE_DI_FUNZIONI
+ def:SUCCESSIONE i cui OGGETTO in successione sono FUNZIONE
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:INTEGRALE_CHIUSO
+ def:INTEGRALE su una FUNZIONE_INTEGRABILE le quali immagini agli estremi di integrazione coincidono
+ comm:undefined
+.
+ (TEORIA_DELLA_MISURA)
+ *1
+
+$
+*0
+name:SPAZIO_SEPARABILE
+ def:uno SPAZIO_TOPOLOGICO che ammette un SOTTOINSIEME che sia DENSO_I in questo e NUMERABILE
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:LIMITE
+ def:OGGETTO del CODOMINIO a cui converge (CONVERGENZA) una certa qual FUNZIONE
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:INSIEME_CONNESSO
+ def:cioe' un INSIEME per il quale non esistono due PARTIZIONE che siano INSIEME_CHIUSO
+ comm:cioe' due sottoinsiemi disgiunti chiusi non esistono; cioé presi due oggetti la cui unione da tutto l'insieme, l'intersezione tra le loro chiusura risultera' non nulla; C(A) int B != 0 != C(B) int A se A un B = I; cioe' in un certo senso "è continuamente riempito"
+.
+ (BASE)
+ *1
+
+$
+*0
+name:CAMMINO_DI_JORDAN
+ def:un CAMMINO_SEMPLICE che sia anche un CAMMINO_CHIUSO
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:CURVA
+ def:FAMIGLIA di CAMMINO_EQUIVALENTE
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:NUMERI_RAZIONALI
+ def:STRUTTURA_ALGEBRICA dotata di CHIUSURA dell'insieme di tutti i NUMERI_INTERI e le operazioni MOLTIPLICAZIONE_ARITMETICA e DIVISIONE_ARITMETICA
+ comm:undefined
+.
+ (TEORIA_DEI_NUMERI)
+ *1
+
+$
+*0
+name:RADICE_ARITMETICA
+ def:OPERAZIONE_BINARIA che e' FUNZIONE_INVERSA(destra) dell'operazione POTENZA_ARITMETICA
+ comm:undefined
+.
+ (TEORIA_DEI_NUMERI)
+ *1
+
+$
+*0
+name:LOGARITMO_ARITMETICO
+ def:OPERAZIONE_BINARIA che e' FUNZIONE_INVERSA(sinistra) dell'operazione POTENZA_ARITMETICA
+ comm:undefined
+.
+ (TEORIA_DEI_NUMERI)
+ *1
+
+$
+*0
+name:GRUPPO
+ def: un MONOIDE LOOP
+ comm:un MAGMA dotato di proprieta' ASSOCIATIVA (QUASIGRUPPO), INVERSO (SEMIGRUPPO) ELEMENTO_NEUTRO (LOOP e MONOIDE) 
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:INSIEME_SEQUENZIALMENTE_COMPATTO
+ def: su uno SPAZIO_TOPOLOGICO, se ad ogni SUCCESSIONE di elementi di questo insieme e' possibile estrarre una SOTTOSUCCESSIONE che abbia CONVERGENZA
+ comm: leggermente diversa dalla compattezza, se un insieme è chiuso sono tuttavia equivalenti (poiché se è chiuso anche i suoi punti di aderenza appartengono all'insieme, e la successione convergera' a quei punti)
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:SPAZIO_COMPLETO
+ def:uno SPAZIO_METRICO in cui ogni SUCCESSIONE_DI_CAUCHY ha CONVERGENZA in un punto dello spazio
+ comm: in tali spazi il criterio di convergenza di cauchy è sufficiente ad assicurare la convergenza di una successione
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:RAPPORTO_INCREMENTALE
+ def:tra due punti, la DIVISIONE_ARITMETICA tra la SOTTRAZIONE_ARITMETICA dei due punti nel DOMINIO  e le due IMMAGINE nel CODOMINIO
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:POLINOMIO
+ def:COMPOSIZIONE di SOMMA_ARITMETICA di POTENZA_ARITMETICA e MOLTIPLICAZIONE_ARITMETICA
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:ANALITICA
+ def:una FUNZIONE se in ogni suo punto e' esprimibile come SERIE di POTENZA_ARITMETICA che e' CONVERGENZA al punto stesso; nel campo complesso risulta essere un insieme di funzioni uguale a quelle olomorfe
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:FUNZIONE_ANALITICA
+ def:FUNZIONE che puo' essere in ogni PUNTO esprimibile come SERIE di POTENZA_ARITMETICA dotata di CONVERGENZA nell'immagine di quel punto
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:SPAZIO_TOPOLOGICO_SEPARABILE
+ def:uno SPAZIO_TOPOLOGICO se esiste un SOTTOINSIEME del suo supporto che sia DENSO_I e NUMERABILE
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:TEOREMA_DI_BLAIRE
+ def:sia dato uno SPAZIO_METRICO che sia SPAZIO_COMPLETO, se esiste una COLLEZIONE NUMERABILE di sottoinsiemi che siano INSIEME_CHIUSO di quello spazio, e l'UNIONE di questi e' uguale allo spazio stesso, allora sicuramente uno di questi insiemi contiene un INSIEME_APERTO
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:NUMERI_REALI
+ def:STRUTTURA_ALGEBRICA dotata di CHIUSURA rispetto a NUMERI_RAZIONALI e qualsiasi COMPOSIZIONE (eventualmente infinita) delle operazioni di MOLTIPLICAZIONE_ARITMETICA e DIVISIONE_ARITMETICA
+ comm: def non nulla rigorosa ma non mi va di rigirarci ora
+.
+ (TEORIA_DEI_NUMERI)
+ *1
+
+$
+*0
+name:COSTANTE_DI_EULERO
+ def:LIMITE della POTENZA_ARITMETICA di (1+1/n)^n
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:INSIEME_SEMPLICEMENTE_CONNESSO
+ def:INSIEME_CONNESSO per cui anche la FRONTIERA e' un insieme connesso
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:CURVA_CHIUSA
+ def:CURVA i cui equivalenti sono CAMMINO_CHIUSO
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:CURVA_SEMPLICE
+ def:CURVA i cui cammini sono CAMMINO_SEMPLICE
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:CURVA_DI_JORDAN
+ def:CURVA i cui cammini sono CAMMINO_DI_JORDAN
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:NUMERI_COMPLESSI
+ def:STRUTTURA_ALGEBRICA dotata di CHIUSURA rispetto a NUMERI_RAZIONALI e qualsiasi COMPOSIZIONE (eventualmente infinita) delle operazioni di POTENZA_ARITMETICA e RADICE_ARITMETICA
+ comm: def non nulla rigorosa ma non mi va di rigirarci ora
+.
+ (TEORIA_DEI_NUMERI)
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:INTEGRALE_R
+ def:estremo superiore dell'insieme dei possibili valori assunti da tutte le SOMMA_DI_RIEMANN, dato dal LIMITE di una funzione esprimente queste somme
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:GRUPPO_ABELIANO
+ def:GRUPPO COMMUTATIVO
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:DERIVATA
+ def:LIMITE in un PUNTO del RAPPORTO_INCREMENTALE di una FUNZIONE
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:NUMERO_REALE
+ def:OGGETTO dei NUMERI_REALI
+ comm:undefined
+.
+ (TEORIA_DEI_NUMERI)
+ *1
+
+$
+*0
+name:NUMERO_COMPLESSO
+ def:OGGETTO dei NUMERI_COMPLESSI
+ comm: 
+.
+ (TEORIA_DEI_NUMERI)
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:FUNZIONE_COMPLESSA
+ def:FUNZIONE sui NUMERI_COMPLESSI
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:PSEUDOANELLO
+ def:SEMIANELLO di cui l'operazione del monoide abeliano ha un OPERAZIONE_INVERSA ed e' dunque un GRUPPO_ABELIANO
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:PRIMITIVA
+ def:primitiva di una FUNZIONE se la sua DERIVATA e' uguale a quella funzione
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:CAMMINO_REGOLARE
+ def:CAMMINO la cui PARAMETRIZZAZIONE ammette una DERIVATA su tutto il suo SOSTEGNO_A
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:CAMMINO_C
+ def:un CAMMINO che ha come sostegno un INTERVALLO dei NUMERI_REALI, e come immagine un sottoinsieme dei NUMERI_COMPLESSI
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:FUNZIONE_LISCIA
+ def:FUNZIONE la cui DERIVATA ha una DERIVATA infinite volte
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:DERIVATA_LOGARITMICA
+ def:la DIVISIONE_ARITMETICA tra la DERIVATA di una funzione e la funzione stessa (f'/f=dlog(f)/dx)
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:UNITA_REALE
+ def:NUMERO_REALE la cui MOLTIPLICAZIONE_ARITMETICA con se stesso da' se stesso
+ comm:undefined
+.
+ (TEORIA_DEI_NUMERI)
+ *1
+
+$
+*0
+name:ARGOMENTO_C
+ def:ANGOLO_A che un NUMERO_COMPLESSO forma con l'unita' reale
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:FORMA_POLARE
+ def:descrizione di un NUMERO_COMPLESSO tramite POTENZA_ARITMETICA del COSTANTE_DI_EULERO
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:FUNZIONE_MONODROMA
+ def:FUNZIONE_COMPLESSA di cui ad ogni valore del DOMINIO se ne ha solo uno nel CODOMINIO
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:FUNZIONE_POLIDROMA
+ def:FUNZIONE_COMPLESSA di cui ad un valore sul DOMINIO se ne puo' associare piu' di uno sul CODOMINIO
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:CAMMINO_CHIUSO_C
+ def:CAMMINO_C che e' CAMMINO_CHIUSO
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:ANALITICA_C
+ def:una FUNZIONE_COMPLESSA ANALITICA 
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:CAMMINO_RETTIFICABILE
+ def:CAMMINO_REGOLARE la cui DERIVATA ha valore assoluto che e' una FUNZIONE_INTEGRABILE
+ comm: nb tutte le curve regolari sono rettificabili se il sostegno e' aperto
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:ANELLO_UNITARIO
+ def:PSEUDOANELLO in cui entrambi le operazioni hanno ELEMENTO_NEUTRO
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:CURVA_REGOLARE
+ def:CURVA i cui cammini sono CAMMINO_REGOLARE
+ comm: nb tutte le curve regolari su sostegni aperti possono essere misurate (cioé sono rettificabili e dunque posso conoscerne la lunghezza) 
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:COMPLESSO_CONIUGATO
+ def:rispetto a un NUMERO_COMPLESSO e' un altro unico numero complesso con parte immaginaria in segno opposto
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:NORMA_C
+ def:lunghezza di un NUMERO_COMPLESSO
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:CURVA_C
+ def:una CLASSE di CAMMINO_C che sono CAMMINO_EQUIVALENTE
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:SERIE_DI_TAYLOR
+ def:SERIE di POTENZA_ARITMETICA sulla DERIVATA di una FUNZIONE_LISCIA che esprime l'immagine di un punto tramite CONVERGENZA
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:FORMULA_DI_DEMOIVRE
+ def:formula che esprime una POTENZA_ARITMETICA di un NUMERO_COMPLESSO
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:CONVOLUZIONE
+ def:date due FUNZIONE_COMPLESSA qualsiasi, si dice prodotto di convoluzione l'INTEGRALE sul loro DOMINIO comune (ev tutto r^n) definito come intg[f(x-y)g(y)dy] (serve ad osservare una correlazione tra le due quantita' "facendo scorrere una funzione sull'altra" )
+ comm: e' una operazione commutativa ( f*g=g*f ) e la si sta definendo qui sui complessi come definizione piu' ampia di tutti gli spazi vettoriali in cui e' applicabile
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:UNITA_IMMAGINARIA
+ def:NUMERO_COMPLESSO la cui MOLTIPLICAZIONE_ARITMETICA con se stesso da' l'INVERSO dell'UNITA_REALE rispetto alla SOTTRAZIONE_ARITMETICA
+ comm:undefined
+.
+ (TEORIA_DEI_NUMERI)
+ *1
+
+$
+*0
+name:FORMULA_DI_EULERO
+ def:descrizione del nagativo dell'UNITA_REALE tramite FORMA_POLARE
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:PUNTO_DI_DIRAMAZIONE
+ def:PUNTO di una FUNZIONE_POLIDROMA rispetto al quale compiere un giro completo intorno, fornisca un'immagine diversa da quella iniziale (cioe' se integri li' intorno hai un valore diverso da zero (collegato a singolarita' di una funzione olom) ) 
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:CURVA_CHIUSA_C
+ def:CURVA_C i cui cammini sono CAMMINO_CHIUSO_C
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:NORMA_P
+ def:INTEGRALE (su un INSIEME_APERTO dei NUMERI_REALI^n) della NORMA_C di una FUNZIONE_COMPLESSA elevata a una potenza arbitraria  
+ comm: per p =2 si ha sqrt(norma_2)=norma euclidea; e' una generaizzazione delle più comuni norme sqrt( sum(x^2) ) nel caso in cui la si radicali poi per p (cioe' psqrt( intg(x^p) ) )
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:LUNGHEZZA
+ def:di un CAMMINO_RETTIFICABILE, l'INTEGRALE sul suo SOSTEGNO_A della DERIVATA della sua PARAMETRIZZAZIONE
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:CORPO
+ def:ANELLO_UNITARIO in cui tutti gli oggetti hanno un INVERSO rispetto ad entrambi le operazioni, tranne l'elemento assorbente del gruppo
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:ANELLO_UNITARIO_COMMUTATIVO
+ def:ANELLO_UNITARIO in cui entrambi le operazioni sono COMMUTATIVO(e)
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:CURVA_REGOLARE_A_TRATTI
+ def:CURVA che e' scomponibile in un insieme finito di CURVA_REGOLARE
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:LIMITE_C
+ def:LIMITE di una FUNZIONE_COMPLESSA operante su una funzione corrispettiva delle NORMA_C dei valori nell'immagine
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:RAPPRESENTAZIONE_INTEGRALE
+ def:espressione di una FUNZIONE tramite l'INTEGRALE di una funzione che studia le sue variabili (definita sullo stesso dominio) su una CURVA_REGOLARE nel dominio della funzione
+ comm:undefined
+.
+ (TEORIA_DELLA_MISURA)
+ *1
+
+$
+*0
+name:PUNTO_ALLINFINITO_C
+ def:PUNTO in cui la NORMA_C sul DOMINIO e' un PUNTO_ALLINFINITO
+ comm: fondamentalmente e' una singolarita' anch'essa (es 1/z ha ha polo di primo ordine all'infinito in z=0)
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:FUNZIONE_A_DECRESCENZA_RAPIDA
+ def:FUNZIONE definita su un dominio di NUMERI_REALI^n le cui NORMA_C della DERIVATA^b*PUNTO^a*IMMAGINE del punto e' un INSIEME_LIMITATO (cioe' sup[|x^a*d^b(x)*f(x)|]x[dir^n]<infinito )
+ comm: cioe' le funzioni le cui tutte derivate n-sime non tendono all'infinito
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:FUNZIONE_P_SOMMABILE
+ def:FUNZIONE_COMPLESSA la cui NORMA_P su un insieme arbitrario sia finita  
+ comm: si dimostrera' che queste costituiscono uno spazio vettoriale
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:ORDINE_DI_DIRAMAZIONE
+ def:numero di giri che si deve compiere intorno a un PUNTO_DI_DIRAMAZIONE affinche' si torni all'immagine iniziale (es log di ordine infinito, sqrt di ordine 2)
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:TAGLIO_DI_DIRAMAZIONE
+ def:composizione geometrica sul piano complesso dell'immagine di una FUNZIONE_POLIDROMA atto a rimuovere i PUNTO_DI_DIRAMAZIONE e collegare tutti gli altri che ruotano intorno
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:DERIVATA_C
+ def:LIMITE_C del RAPPORTO_INCREMENTALE di una funzione sui NUMERI_COMPLESSI
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:FUNZIONE_CONTINUA_C
+ def:FUNZIONE_COMPLESSA il cui LIMITE_C in ogni punto risulta esistente e univoco
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:CAMPO
+ def:CORPO COMMUTATIVO
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:FUNZIONE_OLOMORFA
+ def:una FUNZIONE_COMPLESSA tale che il LIMITE_C del RAPPORTO_INCREMENTALE all'approssimarsi a un punto esista e sia unico; in tal caso si dice differenziabile in tal punto ed olomorfa se lo e' in tutto il suo dominio
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:NUCLEO_INTEGRALE
+ def:la FUNZIONE a due variabili della RAPPRESENTAZIONE_INTEGRALE
+ comm:undefined
+.
+ (TEORIA_DELLA_MISURA)
+ *1
+
+$
+*0
+name:RAPPRESENTAZIONE_SPETTRALE
+ def:quando la funzione a due variabili in una RAPPRESENTAZIONE_INTEGRALE assume la forma 1/(v'-v)
+ comm:undefined
+.
+ (TEORIA_DELLA_MISURA)
+ *1
+
+$
+*0
+name:LEMMA_DEL_PICCOLO_CERCHIO
+ def:data una FUNZIONE_COMPLESSA la cui IMMAGINE in punto centrale per il punto stesso tendono a zero, allora l'ESTREMO_SUPERIORE del LIMITE_C della NORMA_C |zf(z)| in quella sezione di SFERA_DI_INTORNO e' zero  
+ comm: ovverosia la funzione (nb qualsiasi) in un punto zero o in un punto in cui l'immagine sia zero, si approssima ai valori dello zero stesso "abbastanza rapidamente"; si dimostra tramite formula di cauchy
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:SPAZIO_DI_SCHWARTZ
+ def:insieme delle FUNZIONE_A_DECRESCENZA_RAPIDA tra quelle che sono derivabili infinite volte (cioe' le FUNZIONE_ANALITICA)
+ comm: cioe' le funzioni le cui tutte derivate n-sime non tendono all'infinito
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:SPAZIO_LP
+ def:INSIEME delle FUNZIONE_P_SOMMABILE
+ comm:undefined
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:NORMA_LP
+ def:RADICE_ARITMETICA p-sima dell'INTEGRALE di una FUNZIONE_P_SOMMABILE
+ comm: su uno spazio vettoriale risultera' essere ben definita come norma
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:SINGOLARITA_C
+ def:PUNTO di una FUNZIONE_COMPLESSA in cui questa perde la sua proprieta' di FUNZIONE_OLOMORFA
+ comm: per funzioni olomorfe l'insieme di questi punti risultera' discreto, ovverosia ogni singolarità sarà una singolarità isolata
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:SUPERFICIE_DI_RIEMANN
+ def:superficie geometrica sul piano complesso ottenuta eseguendo TAGLIO_DI_DIRAMAZIONE
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:SERIE_DI_LAURENT
+ def:SERIE di POTENZA_ARITMETICA che in una FUNZIONE_OLOMORFA e' dotata di CONVERGENZA ad un'immagine di un punto (include termini negativi)
+ comm:undefined
+.
+ (ANALISI)
+ *1
+
+$
+*0
+name:ZERO_DI_ORDINE_N
+ def:se una FUNZIONE_OLOMORFA ha valore zero in un punto, ma la sua DERIVATA_C n-sima in quel punto e' diversa da zero
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:CAMMINO_REGOLARE_C
+ def:CAMMINO_C la cui PARAMETRIZZAZIONE e' una FUNZIONE_OLOMORFA
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:SPAZIO_VETTORIALE
+ def:e' una struttura costruita da un CAMPO(di "scalari") e un INSIEME di ("vettori") su cui sono definite due OPERAZIONE_BINARIA tale che rispetto alla prima i vettori costruiscono un GRUPPO_ABELIANO e rispetto alla seconda uno pseudo-gruppoabeliano che opera sugli scalari
+ comm:gode di 1 linearita' 2 distributivita' di entrambe le operazioni 3 associativita' 4 scalare neutro
+.
+ (STRUTTURE_ALGEBRICHE)
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:CONDIZIONI_DI_CAUCHY_RIEMANN
+ def:condizioni generali sotto le quali una FUNZIONE_COMPLESSA (a una variabile) risulta essere FUNZIONE_OLOMORFA
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:CURVA_REGOLARE_C
+ def:CURVA_C i cui CAMMINO_C siano FUNZIONE_OLOMORFA
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:FUNZIONE_SPETTRALE
+ def:quando si ha una RAPPRESENTAZIONE_SPETTRALE dicasi funzione spettr quella definita sulla curva di integrazione
+ comm:undefined
+.
+ (TEORIA_DELLA_MISURA)
+ *1
+
+$
+*0
+name:DOMINIO_DI_ANALITICITA
+ def:SOTTOINSIEME del DOMINIO di una FUNZIONE_COMPLESSA sul quale questa e' una FUNZIONE_OLOMORFA
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:DERIVATA_LOGARITMICA_C
+ def:DERIVATA_LOGARITMICA di una FUNZIONE_OLOMORFA
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:DISUGUAGLIANZA_DI_MINKOWSKI
+ def:DISUGUAGLIANZA_TRIANGOLARE per la NORMA_LP
+ comm:undefined
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:INTEGRALE_DI_CONTORNO
+ def:INTEGRALE_R di una FUNZIONE_INTEGRABILE definita su un CAMMINO_REGOLARE_C
+ comm: spesso si tratta di "contorno" quando l'integrale e' chiuso; nb risultera' infine indipendente dal cammino scelto (se la funzione e' olomorfa); parlare di curva o cammino e' indifferente poiché le curve sono classi di cammini equivalenti
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:ANTILINEARE
+ def:proprieta' di una FUNZIONE_COMPLESSA su uno SPAZIO_VETTORIALE di avere l'immagine di un numero complesso moltiplicato per un altro uguale alla funzione stessa per il COMPLESSO_CONIUGATO di quel valore ( f(ax)=c(a)f(x) )
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:SINGOLARITA_POLARE
+ def:SINGOLARITA_C in cui in un INTORNO arbitrario la funzione risulta essere olomorfa
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:FUNZIONE_INTERA_C
+ def:FUNZIONE_OLOMORFA il cui DOMINIO_DI_ANALITICITA e' l'intero spazio dei NUMERI_COMPLESSI
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:TEOREMA_DI_CAUCHY
+ def:l'INTEGRALE_CHIUSO di una FUNZIONE_OLOMORFA su un INSIEME_SEMPLICEMENTE_CONNESSO, eseguito su una CURVA_REGOLARE_C che sia CURVA_SEMPLICE e CURVA_CHIUSA, e' nullo
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:VETTORE
+ def:OGGETTO di uno SPAZIO_VETTORIALE
+ comm: in sostanza sono n-ple con gli oggetti del campo
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:SOTTOSPAZIO_VETTORIALE
+ def:e' un SOTTOINSIEME di uno SPAZIO_VETTORIALE che sia ancora uno spazio vettoriale
+ comm: in pratica basta che sia chiusa rispetto ad entrambe le operazioni
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:APPLICAZIONE_LINEARE
+ def:OMOMORFISMO tra SPAZIO_VETTORIALE dei NUMERI_REALI (che risulta dunque LINEARE)
+ comm: ovverosia dominio e codominio condividono oggetti e operazioni, ma non i vettori; si indica con L(Dom, Cod)
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:SPAN
+ def:dato un SOTTOINSIEME di uno SPAZIO_VETTORIALE, si dice sott vett generato l'intersezione di tutti gli spazi vettoriali contenenti quel sottoinsieme
+ comm:ovverosia il piu' piccolo spazio vettoriale che lo contenga; e' fondamentalmente lo span delle basi dell'insieme dunque si può ottenere come combinazione lineare dei suoi elementi linearmente indipendenti
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:SINGOLARITA_ESSENZIALE
+ def:SINGOLARITA_C il cui sviluppo in SERIE_DI_LAURENT presenta infiniti coeficenti non nulli sui termini negativi
+ comm: per f(z) con z che tende a una singolarita' di questo tipo, il modulo di f(z) non ha alcun limite (==>teorema di weierstrass c)
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:SINGOLARITA_ELIMINABILE
+ def:SINGOLARITA_C in cui sviluppo in SERIE_DI_LAURENT ha tutti i coeficenti tutti nulli sui termini negativi
+ comm: cioè la funzione si puo' estendere ad una funzione olomorfa su quel punto; inoltre il modulo f(z) e' limitato per z che tende alla singolarita'
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:SINGOLARITA_POLARE_DI_ORDINE_N
+ def:SINGOLARITA_C il cui sviluppo in SERIE_DI_LAURENT presenta un numero finito di coeficenti non nulli sui termini negativi
+ comm: la funzione 1/f e' definita in quel punto e presenterebbe li' una singolarita' eliminabile; inoltre il modulo f(z) e' infinito per z che tende alla singolarita'
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:SINGOLARITA_POLARE_SEMPLICE
+ def:SINGOLARITA_C il cui sviluppo in SERIE_DI_LAURENT presenta il termine corrispondente ad n=1 sia non nullo
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:DISUGUAGLIANZA_DI_YOUNG
+ def: dice che la NORMA_LP^p di una CONVOLUZIONE e' minoreuguale alla NORMA_LP^1 di una delle due funzioni per la NORMA_LP^p dell'altra ( |f*g|^1 <= |f|^1|g|^p )
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:TEOREMA_DI_CARATTERIZZAZIONE_DI_CONVOLUZIONE
+ def:data una FUNZIONE_P_SOMMABILE 1 e un altra p-sommabile^p (con p da 1 a infnt) si ha che la loro CONVOLUZIONE e' FUNZIONE_INTEGRABILE e il loro prodotto di convoluzione appartiene allo SPAZIO_LP^p sul dominio scelto per cui vale la DISUGUAGLIANZA_DI_YOUNG
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:RESIDUO
+ def:NUMERO_COMPLESSO che esprime l'INTEGRALE_DI_CONTORNO di una FUNZIONE_OLOMORFA su una CURVA_DI_JORDAN che e' CURVA_REGOLARE_C ed ha al suo interno una SINGOLARITA_C
+ comm: fondamentalmente, esprime informazioni riguardanti quella singolarità; ad esempio in fisica si puo' parlare di una sorgente o un pozzo, ed in tal caso il residuo di quel punto ne esprime l'intensita'
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:APPLICAZIONE_CONTINUA
+ def:APPLICAZIONE_LINEARE che sia FUNZIONE_CONTINUA
+ comm:undefined
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:DISUGUAGLIANZA_DI_DARBOUX
+ def:la NORMA_C dell'INTEGRALE_DI_CONTORNO di una qualche FUNZIONE_COMPLESSA su una qualche CURVA_C e' minoreuguale all'ESTREMO_SUPERIORE dell'immagine della norma della funzione moltiplicata per la LUNGHEZZA della curva ( | intgr[fz] <= sup|fz| intgr[curvaz] )
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:FORMA_SESQUILINEARE
+ def:OPERAZIONE_BINARIA su uno SPAZIO_VETTORIALE dei NUMERI_COMPLESSI, che sia LINEARE sul secondo operando e ANTILINEARE sul primo (o viceversa a seconda della notazione scelta)
+ comm: in fisica si usa l'antilinearità sul primo operando; generalizza il concetto di prodotto scalare agli spazi complessi (che poi verra' meglio definito come sottoinsieme bilineare e simmetrico di questo)
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:FUNZIONE_MEROMORFA
+ def:una FUNZIONE_OLOMORFA su un INSIEME_APERTO che presenta un INSIEME_DISCRETO di SINGOLARITA_POLARE_DI_ORDINE_N
+ comm: nb si riferisce solo ai poli, mentre non ammette singolarita' essenziali
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:TEOREMA_DI_MORERA
+ def:se l'INTEGRALE_DI_CONTORNO di una FUNZIONE_CONTINUA_C su un INSIEME_CONNESSO, calcolato su ogni CURVA_REGOLARE_C che sia una CURVA_DI_JORDAN (interne alla regione) allora quella funzione e' una FUNZIONE_OLOMORFA
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:FORMULA_DI_CAUCHY
+ def:RAPPRESENTAZIONE_SPETTRALE di una FUNZIONE_OLOMORFA tramite INTEGRALE_DI_CONTORNO (dunque curva regolare) su una CURVA_CHIUSA_C il cui NUCLEO_INTEGRALE e' la funzione stessa sulla curva 
+ comm: il punto puo' essere esterno o interno alla curva; se è interno la formula da =0, mentre se e' esterno =f(punto); poiche' per z esterni alla curfa fdc=f(z) questa formula è utile per dimostrare l'analicita' ovverosia l'olomorfismo della primitiva di una funz olomorfa
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:SPAZIO_QUOZIENTE
+ def:CLASSE_DI_EQUIVALENZA di un SOTTOSPAZIO_VETTORIALE rispetto a un certo SPAZIO_VETTORIALE la cui RELAZIONE_DI_EQUIVALENZA e' definita da tutti gli elementi che sottratti tra loro (nb in entrambe le direzioni) danno un vettore del sottospazio
+ comm: Cioè, un elemento dello spvett è equivalente a un altro (rispetto ad un sottospazio) se uno può essere ottenuto da questo aggiungendo un elemento del sottospazio.
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:SOMMA_DIRETTA
+ def:tra due SOTTOSPAZIO_VETTORIALE (di un medesimo spvett) si dice somma diretta se ogni elemento ottenuto e' esprimibile univocamente come somma di un solo vettore del primo e uno solo del secondo
+ comm:ovverosia un insieme i cui elementi abbia dim=dim(a)+dim(b)
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:KERNEL
+ def:SOTTOINSIEME del DOMINIO di una APPLICAZIONE_LINEARE che abbia come IMMAGINE il vettore nullo
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:RANGE
+ def:IMMAGINE di una APPLICAZIONE_LINEARE
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:OPERATORE_LINEARE
+ def:APPLICAZIONE_LINEARE da uno SPAZIO_VETTORIALE a se stesso
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:COMBINAZIONE_LINEARE
+ def:OPERAZIONE tra i VETTORE di uno SPAZIO_VETTORIALE che compone la sua operazione e la moltiplicazione per scalare (coeficenti)
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:FUNZIONALE_LINEARE
+ def:APPLICAZIONE_LINEARE da uno SPAZIO_VETTORIALE a al suo CAMPO
+ comm: (poichè il campo lineare puo' essere assunto come sottospazio vettoriale unidimensionale)
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:NORMA
+ def:FUNZIONE su uno SPAZIO_VETTORIALE che associa ad ogni VETTORE un valore strettamente positivo e per cui valga la DISUGUAGLIANZA_TRIANGOLARE
+ comm: nb sostanzialmente e' un funzionale lineare;
+.
+ (TOPOLOGIA)
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:SPAZIO_LINEARE_TOPOLOGICO
+ def:SPAZIO_VETTORIALE che e' anche uno SPAZIO_DI_HAUSDORFF e per il quale somma e prodotto per scalare di qualsiasi VETTORE risultino FUNZIONE_CONTINUA
+ comm:undefined
+.
+ (TOPOLOGIA)
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:TEOREMA_DI_WEIERSTRASS_C
+ def:in una funzione che presenta una SINGOLARITA_ESSENZIALE si ha che qualsiasi NUMERO_COMPLESSO puo' essere assunto come immagine da quella funzione in un qualche INTORNO del punto singolare
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:TEOREMA_DI_LIUVILLE
+ def:una FUNZIONE_INTERA_C e' FUNZIONE_LIMITATA se e solo se e' costante
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:RESIDUO_ALLINFINITO
+ def:NUMERO_COMPLESSO che esprime l'INTEGRALE_DI_CONTORNO di una FUNZIONE_OLOMORFA su una CURVA_DI_JORDAN che e' CURVA_REGOLARE_C ed ha al suo interno un PUNTO_ALLINFINITO_C
+ comm: fondamentalmente, esprime informazioni riguardanti quella singolarità; ad esempio in fisica si puo' parlare di una sorgente o un pozzo, ed in tal caso il residuo di quel punto ne esprime l'intensita'
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:INDICATORE_LOGARITMICO
+ def:INTEGRALE_DI_CONTORNO della DERIVATA_LOGARITMICA_C su una CURVA_DI_JORDAN CURVA_REGOLARE_C
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:PRODOTTO_SCALARE
+ def:OPERAZIONE_BINARIA su uno SPAZIO_VETTORIALE che associa ad ogni coppia di VETTORE un elemento del suo CAMPO, e sia LINEARE e SIMMETRICA
+ comm: identificato con una matrice reale a dimensione nxn dello spazio vettoriale; sarà poi generalizzato dal concetto di forma sesquilinare e prodotto interno (forma sesqui su R^n) che si può introdurre però solo in campo complesso (secondo quel percorso di definizioni risultera' un prodotto scalare euclideo)
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:ESTENSIONE
+ def:APPLICAZIONE_LINEARE che rispetto ad un altra e' definita su un insieme che la contiene e che risulti uguale in tutti i punti di INTERSEZIONE del loro DOMINIO
+ comm:undefined
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:TEOREMA_DELLA_MEDIA
+ def:data una FUNZIONE_OLOMORFA, eseguendo l'INTEGRALE_DI_CONTORNO che e' INTEGRALE_CHIUSO nell'intorno circolare di un punto all'interno del suo DOMINIO_DI_ANALITICITA si ha che quell'integrale circolare e' uguale al valore della funzione nel centro 
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:LEMMA_DEL_GRANDE_CERCHIO
+ def:dal LEMMA_DEL_PICCOLO_CERCHIO e in quella data situazione si ha che l'INTEGRALE_DI_CONTORNO di quella funzione tende a zero per il raggio che tende a zero
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:SERIE_OPERATORIALE
+ def:SERIE i cui componenti sono OPERATORE_LINEARE
+ comm: 	estende il concetto di serie agli spazi vettoriali; si potra' cosi' parlare di convergenza, limiti, continuita', e approssimazioni anche per oggetti "piu' ampi" delle serie con ragioni a numeri singoli
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:DISUGUAGLIANZA_DI_HOLDER
+ def:dati due NUMERI_REALI tale che la SOMMA_ARITMETICA del loro INVERSO rispetto alla MOLTIPLICAZIONE_ARITMETICA sia uguale all UNITA_REALE (1/p + 1/q=1), date due FUNZIONE_P_SOMMABILE di p e di q, si ha che la NORMA del prodotto delle due funzioni e' minoreuguale al prodotto della norma lp su p e q delle due funzioni ( |fg|1<=|f|p|g|q)  
+ comm: serve a dimostrare la disuguaglianza di shwartz per funzioni p sommabili, cosìcche' se ne dimostri la loro natura di spazio vettoriale
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:LEMMA_DI_JORDAN
+ def: l'INTEGRALE_DI_CONTORNO che sia INTEGRALE_CHIUSO su una SFERA_DI_INTORNO che tende all'infinito (cioe' racchiude tutto l'insieme reale ed immaginario) prendendo solo i valori immaginari positivi, e' uguale a 2pii per la sommatoria dei RESIDUO nel semipiano superiore
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:TEOREMA_DELLINDICATORE_LOGARITMICO
+ def:data una CURVA_REGOLARE_C CURVA_DI_JORDAN su una funzione complessa, tale che al suo interno sia presente un numero finito di SINGOLARITA_POLARE_DI_ORDINE_N e zeri, l'INDICATORE_LOGARITMICO e' uguale alla differenza tra il numero dei poli (con loro ordine) ed il numero degli zeri interni a quella curva *2*pi*i
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:TEOREMA_TOTALE_DEI_RESIDUI
+ def:se una FUNZIONE_OLOMORFA ha SINGOLARITA_C tali che queste siano tutte PUNTO_ISOLATO (formano un insieme discreto) si ha che la somma totale di tutti i RESIDUO ed eventuali RESIDUO_ALLINFINITO e' uguale a zero
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:DUALE_ALGEBRICO
+ def:INSIEME di tutti i FUNZIONALE_LINEARE di uno SPAZIO_VETTORIALE
+ comm: se lo spvett e' identificabile da un vettore 1*n, si ha che il suo duale e' identificabile con matrici n*1 (e il duale del duale con matrici 1*k da cui risulta spvett < spvett** )
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:INSIEME_QUOZIENTE_V
+ def:INSIEME_QUOZIENTE degli SPAZIO_QUOZIENTE di un certo SOTTOSPAZIO_VETTORIALE di uno SPAZIO_VETTORIALE
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:SOTTOSPAZIO_SUPPLEMENTARE
+ def:di ciascun SOTTOSPAZIO_VETTORIALE l'un l'altro (di un medesimo spvett) se la loro somma e' una SOMMA_DIRETTA
+ comm: ovverosia se sono ricavati dallo stesso spazio vettoriale e sono linearmente indipendenti
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:LINEARMENTE_INDIPENDENTE
+ def:proprieta' di un INSIEME di VETTORE (su uno SPAZIO_VETTORIALE) di avere una COMBINAZIONE_LINEARE nulla solo se tutti i coeficenti sono nulli 
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:NORME_EQUIVALENTI
+ def:in uno SPAZIO_VETTORIALE due NORMA si dicono equivalenti se inducono la stessa TOPOLOGIA_T
+ comm: in un certo senso sono equivalenti se sono "proporzionali" in qualche modo; ovvero se per ogni punto la norma rispetto all'una o all'altra e' "limitata" da una moltiplicazione dell'altra( n1*a <n2< n1*b ); in uno spazio vettoriale finito infatti si ha che e' sempre possibile stabilire una norma ed esse risultano tutte equivalenti
+.
+ (TOPOLOGIA)
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:SPAZIO_NORMATO
+ def:SPAZIO_VETTORIALE dotato di NORMA
+ comm: nb risulta sempre essere uno spazio vettoriale topologico (dunque gli si può piantar sopra una topologia di hausdorff, ovverosia si può anche stabilire una metrica)
+.
+ (TOPOLOGIA)
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:SEMINORMA
+ def:NORMA per il quale i vettori a norma nulla sono uguali o diversi dal vettore nullo
+ comm: nb sostanzialmente assumendolo come funzionale lineare, si ha che il suo nucleo ha dim maggiore di zero
+.
+ (TOPOLOGIA)
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:CONVERGENZA_ASSOLUTA
+ def:se per una SERIE di VETTORE su uno SPAZIO_VETTORIALE dotato di NORMA risulta che la serie delle loro norme e' dotata di CONVERGENZA
+ comm: in uno spazio di banach una serie assolutamente convergente e' sicuramente convergente in norma (per dis triangolare)
+.
+ (TOPOLOGIA)
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:CONVERGENZA_IN_NORMA
+ def:quando in uno SPAZIO_VETTORIALE dotato di NORMA risulta che la norma delle differenze tra l'elemento limite e la SUCCESSIONE delle SERIE_RIDOTTA risulta dotata di CONVERGENZA
+ comm:undefined
+.
+ (TOPOLOGIA)
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:SPAZIO_DI_BANACH
+ def: SPAZIO_LINEARE_TOPOLOGICO dotato di NORMA e che e' uno SPAZIO_COMPLETO
+ comm: in sostanza e' uno spazio vettoriale, di hausdorff, normato e metrico; cioé e' dotato di due operazioni chiuse e belle sui suoi vettori, e' "quantitativo" (cioe' topologico), ha una norma ed una metrica (eventualmente indotta), e risulta cauchyanamente completo rispetto a quest'ultima 
+.
+ (TOPOLOGIA)
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:TEOREMA_DEI_RESIDUI
+ def: equazione tra i RESIDUO contenuti in una certa CURVA_DI_JORDAN CURVA_REGOLARE_C e gli INTEGRALE_DI_CONTORNO su curve analoghe che contengono la sola SINGOLARITA_C
+ comm: e' necessario che la singolarita' sia isolata (tale risultera' per funzioni che soddisfano cond cauchy riemann) dunque il numero dei residui sia finito; dice sostanzialmente che il residuo complessivo e' uguale alla somma dei residui singoli
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:TEOREMA_DELLA_NORMA_LP
+ def:una NORMA_LP risulta essere una NORMA
+ comm:undefined
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:FORMA_HERMITIANA
+ def:una FORMA_SESQUILINEARE la cui immagine degli operandi scambiati di posto e' uguale al COMPLESSO_CONIUGATO dell'immagine ( o(x,y)=c[o(y,x)] )
+ comm: generalizza l'idea di simmetria
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:FORMA_BILINEARE
+ def:FORMA_SESQUILINEARE su uno SPAZIO_VETTORIALE dei NUMERI_REALI (poiche' il complesso coniugato e' uguale al numero stesso)
+ comm: in sostanza perché l'antilinearita' complessa sui numeri reali diventa semplice linearita'
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:OPERATORE_IDENTITA
+ def:OPERATORE_LINEARE che associa ogni VETTORE a se stesso
+ comm:undefined
+.
+ (STRUTTURE_ALGEBRICHE)
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:TEOREMA_DELLESTENSIONE_CONTINUA
+ def:data una APPLICAZIONE_CONTINUA definita su un SOTTOSPAZIO_VETTORIALE DENSO_I di uno SPAZIO_DI_BANACH ad un altro,, si ha che esiste una sola e unica altra applicazione lineare continua che risulti ESTENSIONE_N di questa che abbia come dominio tutto lo spazio di banach su cui e' definita la prima
+ comm:undefined
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:SERIE_DI_NEUMANN
+ def:SERIE_OPERATORIALE di POTENZA_ARITMETICA dell'operatore ( sum(O^n) )
+ comm:estende il concetto di serie geometrica
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:DUALE_TOPOLOGICO
+ def:DUALE_ALGEBRICO dei FUNZIONALE_LINEARE che risultano FUNZIONE_CONTINUA
+ comm: negli spazi di hilbert o di banach tutti i duali risultano anche topologici, cioé (per via della completezza e della norma) tutte le applicazioni lineari risultano continue
+.
+ (SPAZI_DI_HILBERT)
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:BASE_V
+ def:SOTTOINSIEME di VETTORE di uno SPAZIO_VETTORIALE tale che sia LINEARMENTE_INDIPENDENTE e massimale
+ comm:ovverosia qualsiasi altro elemento dello sp vett gli si aggiunga sara' linearmente dipendente
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:TEOREMA_DI_NORMALI_TOPOLOGIE
+ def:uno SPAZIO_NORMATO risulta sempre uno SPAZIO_LINEARE_TOPOLOGICO
+ comm:undefined
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:TEOREMA_DEL_NORMALE_COMPLETAMENTO
+ def:uno SPAZIO_NORMATO eventualmente non completo, ammette sempre un completamento in uno SPAZIO_DI_BANACH
+ comm:undefined
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:TEOREMA_DELLA_CONVERGENZA_ASSOLUTA
+ def:in uno SPAZIO_DI_BANACH ogni serie dotata di CONVERGENZA_ASSOLUTA risulta essere dotata di CONVERGENZA
+ comm:undefined
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:APPLICAZIONE_LIMITATA
+ def:APPLICAZIONE_LINEARE tra due SPAZIO_NORMATO tale che la sua NORMA_OPERATORIALE sia INSIEME_LIMITATO
+ comm: puo' non essere una funzione limitata, infatti si chiede solo che   |Ax|<=C|x| (una specie di lipsichianita' per le applicazioni)
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:TEOREMA_DELL_EQUIVALENZA_NORMALE
+ def:due NORMA definite sullo stesso SPAZIO_VETTORIALE sono NORME_EQUIVALENTI (cioe' inducono la stessa TOPOLOGIA_T) se e solo se esistono due costanti positive (e obv reali) tali che una delle due risulti in ogni punto contenuta nell'altra (ax1<=x2<=bx1) 
+ comm:undefined
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:TEOREMA_DELLO_SPAZIO_LP
+ def:uno SPAZIO_LP definito su un aperto dei NUMERI_REALI^n con p incluso tra 1 e infinito, risulta essere uno SPAZIO_DI_BANACH
+ comm:undefined
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:FORMA_SIMMETRICA
+ def:FORMA_HERMITIANA su uno SPAZIO_VETTORIALE dei NUMERI_REALI (poiche' il complesso coniugato reale e' uguale al numero stesso)
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:PRODOTTO_INTERNO
+ def:FORMA_HERMITIANA che sia FORMA_BILINEARE
+ comm: sostanzialmente il prodotto scalare ma ci si arriva specificando una definizione più generale (quella di forma sesquilineare)
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:DIMENSIONE
+ def:NUMERO di VETTORE nella BASE_V di uno SPAZIO_VETTORIALE
+ comm:ovverosia qualsiasi altro elemento dello sp vett gli si aggiunga sara' linearmente dipendente
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:TEOREMA_DI_APPLICAZIONI_DI_SPAZI_NORMATI
+ def:sia una APPLICAZIONE_LINEARE tra due SPAZIO_NORMATO, allora vale contemporaneamente sse 1 FUNZIONE_CONTINUA 2 APPLICAZIONE_LIMITATA 3 le immagini di INSIEME_LIMITATO sono insiemi limitati
+ comm:undefined
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:NORMA_OPERATORIALE
+ def:valore reale definito da una APPLICAZIONE_LIMITATA (che e' anche applicazione continua) che sia ESTREMO_SUPERIORE delle NORMA delle immagini/ norma dei punti ( sup |Ax|/|x| )
+ comm:undefined
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:TEOREMA_DI_CARATTERIZZAZIONE_SESQUILINEARE
+ def:una FORMA_SESQUILINEARE e' 1 sui NUMERI_COMPLESSI e' completamente determinata dai suoi valori diagonali q(x,x); 2 e' FORMA_HERMITIANA sse q(x,x) e' un numero reale; 3 se il CAMPO e' quello dei NUMERI_REALI allora se e' una FORMA_SIMMETRICA e' completamente determinata dai diagonali q(x,x)
+ comm: la 1 e' dovuta al comportamento delle matrici come gruppo; la 2 e' dovuta al fatto che un complesso per il suo coniugato da un numero reale; la 3 e' conseguenza della 1 e la 2
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:OPERATORE_LIMITATO
+ def:OPERATORE_LINEARE che sia una APPLICAZIONE_LIMITATA
+ comm:undefined
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:SPAZIO_PREHILBERTIANO
+ def:SPAZIO_VETTORIALE su cui sia definito un PRODOTTO_INTERNO
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:DISUGUAGLIANZA_DI_SCHWARZ
+ def:dato uno SPAZIO_VETTORIALE sui NUMERI_COMPLESSI, se e' definita su questo un PRODOTTO_INTERNO vale |qxy| < sqrt(qxx) + sqrt(qyy) 
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:PRODOTTO_SCALARE_HERMITIANO
+ def:PRODOTTO_INTERNO sul CAMPO dei NUMERI_COMPLESSI
+ comm: gode di simmetria hermitiana, antilinearita', positivita' stretta; fondamentalmente una generalizzazione del prodotto scalare in campo complesso; 
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:PRODOTTO_SCALARE_EUCLIDEO
+ def:PRODOTTO_INTERNO sul CAMPO dei NUMERI_REALI 
+ comm: gode di simmetria, linearita', positivita' stretta; fondamentalmente e' la stessa definizione del prodotto scalare ma partendo da piu' in generale, poiche' in questo caso e' il sottoinsieme nel reale di un prodotto hermitiano
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:ORTOGONALI
+ def:due VETTORE il cui PRODOTTO_INTERNO e' nullo
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:TRASFORMATA_DI_FOURIER
+ def:formula che associa una FUNZIONE_CONTINUA definita sui NUMERI_REALI^n->complexun INTEGRALE su r^n della FORMA_POLARE del PRODOTTO_INTERNO sui VETTORE della funzione
+ comm: se una funzione e' continua e con derivata continua, p-sommabile e tende a zero all'infinito, allora e trasformabile con fourier 
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:PRINCIPIO_DI_UNIFORME_LIMITATEZZA
+ def:sia data una FAMIGLIA di APPLICAZIONE_LINEARE che siano APPLICAZIONE_CONTINUA tra due SPAZIO_DI_BANACH, se esiste una FUNZIONE per l'ESTREMO_SUPERIORE delle loro immagini e questa sia una FUNZIONE_LIMITATA, si ha che anche le loro NORMA_OPERATORIALE sono un INSIEME_LIMITATO
+ comm:undefined
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:TEOREMA_DELLA_LIMITATEZZA_CONTINUA
+ def:un OPERATORE_LIMITATO su tutto uno SPAZIO_DI_BANACH, se la sua NORMA_OPERATORIALE risulta minore di uno allora questo e'una APPLICAZIONE_CONTINUA 
+ comm:undefined
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:TEOREMA_DELLA_CONTINUITA_APPLICATIVA
+ def:qualsiasi APPLICAZIONE_LINEARE tra due SPAZIO_VETTORIALE a DIMENSIONE finita risulta una FUNZIONE_CONTINUA
+ comm:undefined
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:NON_SINGOLARE
+ def:APPLICAZIONE_LINEARE su un certo DOMINIO la cui DIMENSIONE del KERNEL sia uguale a zero
+ comm:una applicazione lineare non singolare risulta sicuramente iniettiva e viceversa
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:RANGO
+ def:DIMENSIONE del RANGE di una APPLICAZIONE_LINEARE
+ comm: molto importante e sintesi DIM(DOM)=RANGO(IM)+DIM(KER)
+.
+ (STRUTTURE_ALGEBRICHE)
+ *1
+
+$
+*0
+name:TEOREMA_DI_NORMALIZZAZIONE_DEL_FINITO
+ def:in uno SPAZIO_VETTORIALE a DIMENSIONE finita e' sempre possibile definire una NORMA e tutte queste risultano NORME_EQUIVALENTI
+ comm:undefined
+.
+ (STRUTTURE_NORMATE)
+ *1
+
+$
+*0
+name:NORMA_INDOTTA_DAL_PRODOTTO_SCALARE
+ def:NORMA su uno SPAZIO_PREHILBERTIANO indotta dal suo PRODOTTO_INTERNO, tramite l'operazione sqrt(<x|x>)=|x|
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:ANTITRASFORMATA_DI_FOURIER
+ def:TRASFORMATA_DI_FOURIER associata ad un'altra che ne descrive il comportamento tramite il COMPLESSO_CONIUGATO della sua variabile
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:TEOREMA_DI_CARATTERIZZAZIONE_DI_FOURIER
+ def:data una funzione appartenente allo SPAZIO_LP 1 di tutti i NUMERI_REALI^n si ha che la sua TRASFORMATA_DI_FOURIER 1 e' FUNZIONE_LIMITATA nella sua NORMA_LP 1 ; 2 e' FUNZIONE_CONTINUA (uniformemente) 3 tende a zero per i suoi PUNTO_ALLINFINITO
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:SPAZIO_DI_HILBERT
+ def:SPAZIO_PREHILBERTIANO su cui sia stata definita una NORMA_INDOTTA_DAL_PRODOTTO_SCALARE (che a sua volta induce anche una METRICA)
+ comm: ovverosia ha una struttura di spazio di banach indotta dal prodotto interno (che in questo caso ha un'impostazione specifica per trattare i numeri complessi)
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:SISTEMA_ORTOGONALE
+ def:insiee di VETTORE di uno SPAZIO_DI_HILBERT che risultano tra loro ORTOGONALI
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:PROIEZIONE_ORTOGONALE
+ def:dato uno SPAZIO_DI_HILBERT un suo VETTORE qualunque  e un suo SOTTOINSIEME qualunque, si definisce proiezione ortogonale l'oggetto nel sottoinsieme la cui distanza dal vettore e' minima tale che i due risultino ORTOGONALI
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:COMPLEMENTO_ORTOGONALE
+ def:dato uno SPAZIO_DI_HILBERT e un suo SOTTOINSIEME si definisce tale l'insieme dei VETTORE ORTOGONALI a tutti i vettori di quel sottoinsieme
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:TEOREMA_DI_FISCHER_RIESZ
+ def:per ogni FUNZIONALE_LINEARE e FUNZIONE_CONTINUA appartenente al DUALE_TOPOLOGICO di uno SPAZIO_DI_HILBERT esiste un solo punto dello spazio che ha come PRODOTTO_INTERNO con un altro l'immagine del funzionale lineare di questo; f(y)=<x,y> per un solo x
+ comm: ovverosia uno spazio di hilbert coincide con il suo duale topologico; il prodotto interno costituisce così "il più generale" dei funzionali lineari continui del duale topologico H*
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:SISTEMA_ORTONORMALE
+ def:insieme di VETTORE in uno SPAZIO_DI_HILBERT che risultano tra loro ORTOGONALI e di NORMA_INDOTTA_DAL_PRODOTTO_SCALARE con se stessi unitaria
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:OPERATORE_AGGIUNTO
+ def:OPERATORE_LINEARE su SPAZIO_DI_HILBERT la cui matrice rispetto ad un altro e' uguale alla trasposta coniugata (un operatore tale cioe' che <ax,y>=<x,by> )
+ comm: e' la generalizzazione della trasposta per le applicazioni a valori complessi (si richiede anche la coniugazione per le proprieta' antilineari di una forma sesqui)
+.
+ (STRUTTURE_ALGEBRICHE)
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:OPERATORE_INVERSO
+ def:OPERATORE_LINEARE su SPAZIO_DI_HILBERT che se moltiplicato ad un altro da l'OPERATORE_IDENTITA
+ comm: e' la generalizzazione della trasposta per le applicazioni a valori complessi (si richiede anche la coniugazione per le proprieta' antilineari di una forma sesqui)
+.
+ (STRUTTURE_ALGEBRICHE)
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:OPERATORE_AUTOAGGIUNTO
+ def:OPERATORE_LINEARE su SPAZIO_DI_HILBERT la cui matrice rispetto ad un altro e' uguale alla trasposta coniugata ( <ax,y>=<x,ay> )
+ comm: e' un operatore che induce un prodotto hermitiano, o prodotto interno, ed e' la generalizzazione complessa di una matrice simmetrica; gli operatori identificati da tali matrici sono bilineari e hermitiani, cioe' prodotti interni (o prodotti hermitiani che dir si voglia)
+.
+ (STRUTTURE_ALGEBRICHE)
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:OPERATORE_UNITARIO
+ def:OPERATORE_LINEARE che sia FUNZIONE_SURIETTIVA su uno SPAZIO_DI_HILBERT e conserva il valore di un PRODOTTO_INTERNO
+ comm: nel caso in cui stiamo parlando di operatori definiti su sottoinsiemi densi si possono distinguere autoaggiunto e simm; nel caso di operatori su tutto uno spazio di hilbert sono semplicemente coincidenti
+.
+ (STRUTTURE_ALGEBRICHE)
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:OPERATORE_SIMMETRICO
+ def:OPERATORE_LINEARE il cui OPERATORE_AGGIUNTO e' una ESTENSIONE dell'operatore stesso (praticamente equivalente alla def di autoaggiunto ma stiamo definendolo su un insieme più piccolo)
+ comm: nel caso in cui stiamo parlando di operatori definiti su sottoinsiemi densi si possono distinguere autoaggiunto e simm; nel caso di operatori su tutto uno spazio di hilbert sono semplicemente coincidenti
+.
+ (STRUTTURE_ALGEBRICHE)
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:POLINOMI_ORTOGONALI
+ def:insieme di polinomi che costituiscono un SISTEMA_ORTOGONALE rispetto a un certo PRODOTTO_INTERNO di uno SPAZIO_DI_HILBERT
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:TEOREMA_DEL_COMPLEMENTO_ORTOGONALE
+ def:dato uno SPAZIO_DI_HILBERT un COMPLEMENTO_ORTOGONALE costituisce un SOTTOSPAZIO_VETTORIALE
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:TEOREMA_DELLA_DISGIUNZIONE_ORTOGONALE
+ def:dato uno SPAZIO_DI_HILBERT una somma tra un suo SOTTOSPAZIO_VETTORIALE e il suo COMPLEMENTO_ORTOGONALE e' una SOMMA_DIRETTA
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:PROIETTORE_ORTOGONALE
+ def:OPERATORE_LINEARE su uno SPAZIO_DI_HILBERT che associ ad un VETTORE la sua PROIEZIONE_ORTOGONALE in un certo insieme
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:TEOREMA_DELLORTOGONALE_ORTOGONALE
+ def:dato un SOTTOSPAZIO_VETTORIALE di uno SPAZIO_DI_HILBERT, il COMPLEMENTO_ORTOGONALE del suo complemento ortogonale risulta l'insieme iniziale stesso
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:DISUGUAGLIANZA_DI_BESSEL
+ def:sia dato un SISTEMA_ORTONORMALE in uno SPAZIO_DI_HILBERT (di dimensioni qualsiasi) e un PUNTO appartenente a questo (non nullo), i valori del PRODOTTO_INTERNO del sistema con il punto avranno al piu' un infinita NUMERABILE di valori non nulli e la somma di questi risultera' minore della NORMA_INDOTTA_DAL_PRODOTTO_SCALARE di quel punto
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:BASE_HILBERTIANA
+ def:SISTEMA_ORTONORMALE in uno SPAZIO_DI_HILBERT che non puo' essere esteso mediante alcun altro vettore dello spazio che lo contiene
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:COEFFICIENTI_DI_FOURIER
+ def:dato un SISTEMA_ORTONORMALE su uno SPAZIO_DI_HILBERT e un punto qualsiasi di questo, si dicono coeffour i valori del PRODOTTO_INTERNO di questo con le basi    < basi , x > 
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:TEOREMA_GRAM_SCHMIDTH
+ def:sia dato un insieme NUMERABILE di VETTORE su uno SPAZIO_DI_HILBERT allora esiste sicuramente un SISTEMA_ORTONORMALE tale che 1 ogni vettore e' COMBINAZIONE_LINEARE di questi 2 il SOTTOSPAZIO_VETTORIALE SPAN di questi coincide con lo span di tutti i vettori dello spazio
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:TEOREMA_DI_CARATTERIZZAZIONE_DEGLI_AGGIUNTI
+ def:dato un OPERATORE_LINEARE che sia APPLICAZIONE_CONTINUA su uno SPAZIO_DI_HILBERT (a se stesso obv) si ha che 1 il suo OPERATORE_AGGIUNTO e' anch'esso continuo 2 (ab)*=b*a* 3 |a*a|=|a|^2 3 a**=a
+ comm: NB si sta qui specificando di operatori su spazi di hilbert, ma si puo generalizzare a spazi vettoriali e amen; e' un operatore che induce un prodotto hermitiano, o prodotto interno, ed e' la generalizzazione complessa di una matrice simmetrica; gli operatori identificati da tali matrici sono bilineari e hermitiani, cioe' prodotti interni (o prodotti hermitiani che dir si voglia)
+.
+ (STRUTTURE_ALGEBRICHE)
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:TEOREMA_DI_CARATTERIZZAZIONE_DEGLI_UNITARI
+ def:dato un OPERATORE_LINEARE  su uno SPAZIO_DI_HILBERT (a se stesso obv) si ha che questo e' un OPERATORE_UNITARIO sse il suo OPERATORE_AUTOAGGIUNTO e' coincidente con il suo OPERATORE_INVERSO (uu*=1=u*u)
+ comm: NB si sta qui specificando di operatori su spazi di hilbert, ma si puo generalizzare a spazi vettoriali e amen; e' un operatore che induce un prodotto hermitiano, o prodotto interno, ed e' la generalizzazione complessa di una matrice simmetrica; gli operatori identificati da tali matrici sono bilineari e hermitiani, cioe' prodotti interni (o prodotti hermitiani che dir si voglia)
+.
+ (STRUTTURE_ALGEBRICHE)
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:TEOREMA_DI_SEPARAZIONE_ORTONORMALE
+ def:uno SPAZIO_DI_HILBERT e' uno SPAZIO_SEPARABILE se e solo se ammette una BASE_HILBERTIANA NUMERABILE
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:ORTOGONALIZZAZIONE_GRAM_SCHMIDT
+ def:dal TEOREMA_GRAM_SCHMIDTH, prendendo un SOTTOINSIEME di uno SPAZIO_VETTORIALE possiamo eliminare da questi quelli che siano non LINEARMENTE_INDIPENDENTE, ed ottenere da quelli indip lin rimasti un SISTEMA_ORTONORMALE tramite PROIEZIONE_ORTOGONALE a catena
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:RELAZIONE_DI_PARSEVAL
+ def:data una BASE_HILBERTIANA, la norma di qualsiasi punto dello spazio e' esprimibile come somma dei PRODOTTO_INTERNO^2 di questo con gli elementi della base 
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:RELAZIONE_DI_COMPLETEZZA
+ def:data una BASE_HILBERTIANA si ha che il PRODOTTO_INTERNO di due qualsiasi punti nello spazio puo' essere espressa come somma del prodotto delle PROIEZIONE_ORTOGONALE di questi sugli elementi della base
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:TEOREMA_DEL_SIMMETRICO_REALE
+ def:un OPERATORE_SIMMETRICO definito su un sottoinsieme DENSO_I di uno SPAZIO_DI_HILBERT e' tale che <x,ax> sono NUMERI_REALI per qualunque VETTORE dello spazio
+ comm: praticamente si sta dicendo che gli operatori simmetrici(/autoaggiunti) inducono le proprieta' di un prodotto interno (o prodotto hermitiano che dir si voglia)
+.
+ (STRUTTURE_ALGEBRICHE)
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:TEOREMA_DI_CARATTERIZZAZIONE_ORTONORMALE
+ def:sia data una BASE_HILBERTIANA su uno SPAZIO_DI_HILBERT si ha che 1 lo SPAN di queste e' tutto lo spazio 2 ogni vettore puo' essere scritto tramite PROIEZIONE_ORTOGONALE sulla base 3 vale la RELAZIONE_DI_PARSEVAL 4 vale la RELAZIONE_DI_COMPLETEZZA
+ comm:undefined
+.
+ (SPAZI_DI_HILBERT)
+ *1
+
+$
+*0
+name:CONVERGENZA_UNIFORME
+ def:undefined
+ comm:undefined
+.
+ (TOPOLOGIA)
+ *1
+
+$
+*0
+name:PARTE_PRINCIPALE_C
+ def:undefined
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+$
+*0
+name:TRASFORMAZIONI_DI_HILBERT
+ def:undefined
+ comm:undefined
+.
+ (ANALISI_COMPLESSA)
+ *1
+
+}

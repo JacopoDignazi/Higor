@@ -1,0 +1,191 @@
+
+$0
+ name:ANALISI_ZERO
+ comm:
+.
+ $1
+
+ {
+
+$
+*0
+name:QUANTITA
+ def:undefined
+ comm:undefined
+.
+ (ANALISI_ZERO)
+ *1
+
+$
+*0
+name:OGGETTO
+ def:undefined
+ comm:undefined
+.
+ (ANALISI_ZERO)
+ *1
+
+$
+*0
+name:ASSOCIAZIONE
+ def:undefined
+ comm:undefined
+.
+ (ANALISI_ZERO)
+ *1
+
+$
+*0
+name:ALTRA
+ def:undefined
+ comm:undefined
+.
+ (ANALISI_ZERO)
+ *1
+
+$
+*0
+name:ITERAZIONE
+ def:undefined
+ comm:undefined
+.
+ (ANALISI_ZERO)
+ *1
+
+$
+*0
+name:STRUTTURA
+ def:undefined
+ comm:undefined
+.
+ (ANALISI_ZERO)
+ *1
+
+$
+*0
+name:OGGETTI
+ def:undefined
+ comm:undefined
+.
+ (ANALISI_ZERO)
+ *1
+
+
+$
+*0
+name:ASSOCIAZIONE_INVERSA
+ def:ASSOCIAZIONE tra un OGGETTO e l'associazione dell'oggetto a cui si associa
+ comm:undefined
+.
+ (ANALISI_ZERO)
+ *1
+
+$
+*0
+name:INSIEME
+ def:STRUTTURA di OGGETTI
+ comm:undefined
+.
+ (ANALISI_ZERO)
+ *1
+
+$
+*0
+name:SUCCESSIVO
+ def:ASSOCIAZIONE di una QUANTITA ad un'ALTRA QUANTITA
+ comm:undefined
+.
+ (ANALISI_ZERO)
+ *1
+
+$
+*0
+name:UNO
+ def:OGGETTO QUANTITA
+ comm:undefined
+.
+ (ANALISI_ZERO)
+ *1
+
+$
+*0
+name:NUMERO_NATURALE
+ def:QUANTITA successiva (SUCCESSIVO) iterativamente (ITERAZIONE) ad UNO
+ comm:undefined
+.
+ (ANALISI_ZERO)
+ *1
+
+$
+*0
+name:DUE
+ def:SUCCESSIVO di UNO
+ comm:undefined
+.
+ (ANALISI_ZERO)
+ *1
+
+$
+*0
+name:ADDIZIONE
+ def:SUCCESSIVO iterativo(ITERAZIONE) di un NUMERO_NATURALE
+ comm:undefined
+.
+ (ANALISI_ZERO)
+ *1
+
+$
+*0
+name:NUMERI_NATURALI
+ def:INSIEME di tutti i NUMERO_NATURALE
+ comm:undefined
+.
+ (ANALISI_ZERO)
+ *1
+
+$
+*0
+name:MOLTIPLICAZIONE
+ def:ASSOCIAZIONE di ITERAZIONE di ADDIZIONE 
+ comm:undefined
+.
+ (ANALISI_ZERO)
+ *1
+
+$
+*0
+name:SOTTRAZIONE
+ def:ASSOCIAZIONE_INVERSA dell'ADDIZIONE
+ comm:undefined
+.
+ (ANALISI_ZERO)
+ *1
+
+$
+*0
+name:NUMERO_INTERO
+ def:QUANTITA di SOTTRAZIONE tra NUMERI_NATURALI
+ comm:undefined
+.
+ (ANALISI_ZERO)
+ *1
+
+$
+*0
+name:ZERO
+ def:SOTTRAZIONE di un NUMERO_NATURALE e se stesso
+ comm:undefined
+.
+ (ANALISI_ZERO)
+ *1
+
+$
+*0
+name:NUMERI_INTERI
+ def:STRUTTURA di SOTTRAZIONE e ADDIZIONE tra un NUMERO_INTERO  e un altro
+ comm:undefined
+.
+ (ANALISI_ZERO)
+ *1
+
+}

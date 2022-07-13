@@ -1,0 +1,53 @@
+
+$0
+ name:GLOBAL
+ comm: struttura generica di contenimento 
+.
+ $1
+
+ {
+
+$
+*0
+name:DUE
+ def:undefined
+ comm:undefined
+.
+ *1
+
+$
+*0
+name:BLOFF
+ def:undefined
+ comm:undefined
+.
+ *1
+
+$
+*0
+name:BBB
+ def:undefined
+ comm:undefined
+.
+ *1
+
+$
+*0
+name:NN
+ def:abalabBBB
+ comm:undefined
+.
+ (BLA)
+ (BLIBLO)
+ *1
+
+$
+*0
+name:BLO
+ def:un DUE uNN
+ comm:undefined
+.
+ (BLA)
+ *1
+
+}

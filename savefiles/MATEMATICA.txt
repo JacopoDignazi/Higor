@@ -1,0 +1,109 @@
+
+$0
+ name:MATEMATICA
+ comm:
+.
+ $1
+
+ {
+
+$
+*0
+name:PLA
+ def:undefined
+ comm:undefined
+.
+ (MATEMATICA)
+ *1
+
+$
+*0
+name:BLA
+ def:undefined
+ comm:undefined
+.
+ (MATEMATICA)
+ *1
+
+$
+*0
+name:BLO_BLA
+ def:undefined
+ comm:undefined
+.
+ (MATEMATICA)
+ *1
+
+$
+*0
+name:BLO
+ def:BLO_BLA
+ comm:undefined
+.
+ (MATEMATICA)
+ *1
+
+$
+*0
+name:BLABLO
+ def:BLA BLO
+ comm:undefined
+.
+ (MATEMATICA)
+ *1
+
+$
+*0
+name:PLU
+ def:BLABLO
+ comm:undefined
+.
+ (MATEMATICA)
+ *1
+
+$
+*0
+name:PLOFF
+ def:PLU
+ comm:undefined
+.
+ (MATEMATICA)
+ *1
+
+$
+*0
+name:PLO
+ def:PLOFF
+ comm:undefined
+.
+ (MATEMATICA)
+ *1
+
+$
+*0
+name:PLI
+ def:PLOFF
+ comm:undefined
+.
+ (MATEMATICA)
+ *1
+
+$
+*0
+name:PRULLALLA
+ def:PLI PLO PLA
+ comm:undefined
+.
+ (MATEMATICA)
+ *1
+
+$
+*0
+name:UN
+ def:DUE
+ comm:undefined
+.
+ (MATEMATICA)
+ *1
+
+}

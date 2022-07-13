@@ -1,0 +1,109 @@
+
+$0
+ name:BASE
+ comm:
+.
+ $1
+
+ {
+
+$
+*0
+name:OGGETTO
+ def:oggetto
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:PRODOTTO_CARTESIANO
+ def:undefined
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:COLLEZIONE
+ def:oggetto "composto" da altri OGGETTO
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:NPLA
+ def:COLLEZIONE ordinata di n OGGETTO
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:COPPIA
+ def:COLLEZIONE di due oggetti ordinati
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:CLASSE
+ def:generica COLLEZIONE di oggetti (univocamente identificabili)
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:FAMIGLIA
+ def:COLLEZIONE di OGGETTO (di qualsiasi genere)
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:INSIEME
+ def:COLLEZIONE che non puo contenere due volte lo stesso oggetto, e non e' ordinata
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:SOTTOINSIEME
+ def:INSIEME contenuto in un altro
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:PRODOTTO_CARTESIANO
+ def:INSIEME delle NPLA componibili ordinatamente da degli insiemi
+ comm:undefined
+.
+ (BASE)
+ *1
+
+$
+*0
+name:RELAZIONE
+ def:SOTTOINSIEME del PRODOTTO_CARTESIANO
+ comm:undefined
+.
+ (BASE)
+ *1
+
+}
